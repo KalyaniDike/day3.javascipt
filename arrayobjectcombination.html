@@ -1,0 +1,45 @@
+<script>
+  var product = [
+    {
+      name: "puma",
+      price: 1500,
+      size: ["m", "l"],
+      path: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_EMEA?wid=400&hei=260&fmt=png-alpha&.v=1723857138464",
+    },
+    {
+      name: "puma",
+      price: 1500,
+      size: ["m", "l"],
+      path: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_EMEA?wid=400&hei=260&fmt=png-alpha&.v=1723857138464",
+    },
+
+    {
+      name: "puma",
+      price: 1500,
+      size: ["m", "l"],
+      path: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_EMEA?wid=400&hei=260&fmt=png-alpha&.v=1723857138464",
+    },
+  ];
+  console.log(product);
+  for (let ans of product) {
+    document.write(`
+        <div>
+            <img src="${ans.path}"alt="">
+            <h2>
+    ${ans.price}
+</h2>
+<p>
+    ${ans.name}
+</p>
+</div>
+`);
+    console.log(ans);
+  }
+</script>
+<style>
+    div{
+        float:left;
+
+    }
+    
+</style>

@@ -1,0 +1,23 @@
+<script>
+  var product = {
+    name: "puma",
+    price: 1500,
+    size: ["m", "l"],
+    path: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202409_GEO_EMEA?wid=400&hei=260&fmt=png-alpha&.v=1723857138464",
+  };
+  document.write(`<div>
+    <img src="${product.path}" alt="">
+    <h2>${product.price}</h2>
+    <p>${product.name}</p>
+</div>`);
+  console.log(product);
+</script>
+<style>
+    div{
+        border: solid;
+        text-align: center;
+        padding: 10px;
+        height: 300px;
+        width: 350px;
+    }
+</style>
